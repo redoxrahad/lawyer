@@ -1,0 +1,181 @@
+.navbar-light .navbar-nav .nav-link {
+    color: #204f87;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(5 20 90);
+}
+.banner{
+    background-image: url(../images/slider.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   position: relative;
+}
+
+
+.banner-icon{
+  
+    color: #fff;
+      
+    font-size: 30px;
+      
+    position: absolute;
+      
+    left: 50%;
+      
+    top: 70%;
+      
+    transform: translate(-50%, -70%);
+    animation: ani 2s linear infinite;
+    animation-direction: alternate;
+    }
+    @keyframes ani{
+      0%{
+        top: 70%;
+      }
+      100%{
+        top: 75%;
+      }
+    }
+.hg{
+    min-height: 90vh;
+    align-items: center;
+}
+.banner h1{
+    
+color: #fff;
+    
+font-size: 60px;
+    
+text-transform: uppercase;
+}
+.who-we-are{
+
+}
+.who-we-are h1{
+    
+color: #204f87;
+    
+text-transform: uppercase;
+    
+font-size: 35px;
+}
+.who-we-are p{
+    
+color: #b0b0b1;
+}
+.who-we-are span{
+    
+display: block;
+    
+height: 5px;
+    
+width: 50px;
+opacity: 0;
+    
+background-color: #f05428;
+transition: .4s all ease-in-out;
+}
+.who-we-are:hover span{
+    width: 50px;
+    opacity: 1;
+}
+.what-we-do{
+    background-color: #f7f8f8;
+}
+.what-we-do h1{
+
+text-transform: uppercase;
+
+font-size: 35px;
+
+/* color: #2b2f85; */
+}
+.what-we-do span{
+    
+display: inline-block;
+    
+height: 5px;
+    
+width: 0px;
+    
+background-color: #f05428;
+    
+text-align: center;
+transition: .4s all ease-in-out;
+}
+.what-we-do:hover span{
+    width: 50px;
+}
+.we-do{
+    position: relative;
+
+}
+.we-do::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    transition: .4s all ease-in-out;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#323487+0,323487+100&0+0,1+99 */
+background: -moz-linear-gradient(top,  rgba(50,52,135,0) 0%, rgba(50,52,135,1) 99%, rgba(50,52,135,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(50,52,135,0) 0%,rgba(50,52,135,1) 99%,rgba(50,52,135,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(50,52,135,0) 0%,rgba(50,52,135,1) 99%,rgba(50,52,135,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00323487', endColorstr='#323487',GradientType=0 ); /* IE6-9 */
+
+}
+.we-do:hover::before{
+    height: 100%;
+}
+.content{
+    
+position: absolute;
+    
+top: 60%;
+    
+left: 50%;
+    
+transform: translate(-50%, -50%);
+    
+color: #fff;
+    
+text-transform: uppercase;
+    
+/* font-size: 30px; */
+opacity: 0;
+transition: .4s all ease-in-out;
+}
+.content h1{
+    font-size: 25px;
+}
+.we-do:hover .content{
+    opacity: 1;
+    top: 50%;
+
+}
+.icon{
+    
+position: absolute;
+    
+top: 80%;
+    
+left: 40%;
+    
+transform: translate(-50%);
+    
+color: #fff;
+    
+font-size: 30px;
+opacity: 0;
+transition: .4s all ease-in-out;
+}
+.we-do:hover .icon{
+    left: 50%;
+    opacity: 1;
+
+}
